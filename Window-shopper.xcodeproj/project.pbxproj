@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4210FD18218F903800B90CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210FD17218F903800B90CB0 /* AppDelegate.swift */; };
-		4210FD1A218F903800B90CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210FD19218F903800B90CB0 /* ViewController.swift */; };
+		4210FD1A218F903800B90CB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4210FD19218F903800B90CB0 /* MainViewController.swift */; };
 		4210FD1D218F903800B90CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4210FD1B218F903800B90CB0 /* Main.storyboard */; };
 		4210FD1F218F903A00B90CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4210FD1E218F903A00B90CB0 /* Assets.xcassets */; };
 		4210FD22218F903A00B90CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4210FD20218F903A00B90CB0 /* LaunchScreen.storyboard */; };
+		42FD50522199AFB9009765C2 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD50512199AFB9009765C2 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4210FD14218F903800B90CB0 /* Window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4210FD17218F903800B90CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4210FD19218F903800B90CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4210FD19218F903800B90CB0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4210FD1C218F903800B90CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4210FD1E218F903A00B90CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4210FD21218F903A00B90CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4210FD23218F903A00B90CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FD50512199AFB9009765C2 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		4210FD16218F903800B90CB0 /* Window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				42FD50502199AF99009765C2 /* View */,
+				42FD504F2199ADD7009765C2 /* Controller */,
 				4210FD17218F903800B90CB0 /* AppDelegate.swift */,
-				4210FD19218F903800B90CB0 /* ViewController.swift */,
-				4210FD1B218F903800B90CB0 /* Main.storyboard */,
 				4210FD1E218F903A00B90CB0 /* Assets.xcassets */,
 				4210FD20218F903A00B90CB0 /* LaunchScreen.storyboard */,
 				4210FD23218F903A00B90CB0 /* Info.plist */,
 			);
 			path = "Window-shopper";
+			sourceTree = "<group>";
+		};
+		42FD504F2199ADD7009765C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4210FD19218F903800B90CB0 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42FD50502199AF99009765C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4210FD1B218F903800B90CB0 /* Main.storyboard */,
+				42FD50512199AFB9009765C2 /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4210FD1A218F903800B90CB0 /* ViewController.swift in Sources */,
+				4210FD1A218F903800B90CB0 /* MainViewController.swift in Sources */,
 				4210FD18218F903800B90CB0 /* AppDelegate.swift in Sources */,
+				42FD50522199AFB9009765C2 /* CurrencyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
